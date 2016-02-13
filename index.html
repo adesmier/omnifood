@@ -6,6 +6,7 @@
 
     <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="vendors/css/Grid.css" />
+    <link rel="stylesheet" type="text/css" href="vendors/css/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="vendors/fonts/ionicons-2.0.1/css/ionicons.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/style.css" />
     <link rel="stylesheet" type="text/css" href="resources/css/mquery.css" />
@@ -16,27 +17,27 @@
     
 <body>
     <header>
-        <Nav class="sticky">
+        <nav>
             <div class="row">
                 <img src="resources/images/logo-white.png" alt="Omnifood Logo" class="logo" />
                 <img src="resources/images/logo.png" alt="Omnifood Logo" class="logo-black" />
                 <ul class="main-nav">
-                    <li><a href="#">Food Delivery</a></li>
-                    <li><a href="#">How it Works</a></li>
-                    <li><a href="#">Our Cities</a></li>
-                    <li><a href="#">Sign Up</a></li>
+                    <li><a href="#features">Food Delivery</a></li>
+                    <li><a href="#works">How it Works</a></li>
+                    <li><a href="#cities">Our Cities</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
                 </ul>
             </div>
-        </Nav>
+        </nav>
         
         <div class="hero-text-box">
             <h1>Goodbye Junk Food.<br/>Hello Super Healthy Meals.</h1>
-            <a class="btn btn-full" href="#">I'm Hungry</a>
-            <a class="btn btn-ghost" href="#">Show Me More</a>
+            <a class="btn btn-full js-scroll-to-plans" href="#">I'm Hungry</a>
+            <a class="btn btn-ghost js-scroll-to-features" href="#">Show Me More</a>
         </div>
     </header>
 
-    <section class="features-section js-features-section">
+    <section class="features-section js-features-section" id="features">
         <div class="row title">
             <h2>Get Food Fast &mdash; Not Fast Food</h2>
             <p>
@@ -44,7 +45,7 @@
             </p>
         </div>
 
-        <div class="row features">
+        <div class="row features js-animate-features">
             <div class="col span-1-of-4">
                 <i class="ion-ios-infinite-outline large-icon"></i>
                 <h3>Up to 365 days/year</h3>
@@ -105,16 +106,16 @@
         </ul>
     </section>
 
-    <section class="how-it-works">
+    <section class="how-it-works js-works-section" id="works">
         <div class="row">
             <h2>How it Works &mdash; Simple as 1, 2, 3</h2>
         </div>
 
         <div class="row">
-            <div class="col span-1-of-2 steps-box">
+            <div class="col span-1-of-2 steps-box js-animate-works-phone">
                 <img class="app-screen" src="resources/images/app-iPhone.png" alt="Omnifood app on iPhone" />
             </div>
-            <div class="col span-1-of-2 steps-box">
+            <div class="col span-1-of-2 steps-box js-animate-works-steps">
                 <div class="works-step">
                     <div>1</div>
                     <p>
@@ -140,7 +141,7 @@
         </div>
     </section>
 
-    <section class="cities-section">
+    <section class="cities-section" id="cities">
         <div class="row">
             <h2>We're Currently in these Cities</h2>
         </div>
@@ -235,7 +236,7 @@
         </div>
     </section>
 
-    <section class="sign-up">
+    <section class="sign-up js-sign-up" id="signup">
         <div class="row">
             <h2>Start Eating Healthy Today</h2>
         </div>
@@ -403,9 +404,9 @@
         </div>
     </footer>
     
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"/>
-    <script type="text/javascript" src="resources/scripts/script.js"/>
-    <script type="text/javascript" src="vendors/scripts/jquery.waypoints.min.js"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script type="text/javascript" src="vendors/scripts/jquery.waypoints.min.js"></script>
+    <script type="text/javascript" src="resources/scripts/script.js"></script>
     
 </body>
 </html>

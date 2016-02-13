@@ -255,6 +255,8 @@ header{
     width: 100%;
     background-color: rgba(255, 255, 255, 0.97);
     box-shadow: 0 2px 1px #ebebeb;
+    z-index: 1;
+    transition: all 0.5s;
 }
 
 .sticky .main-nav{
@@ -265,6 +267,11 @@ header{
 .sticky .main-nav li a:visited{
     color: #555;
     padding: 20px 0;
+}
+
+.sticky .main-nav li a:hover,
+.sticky .main-nav li a:active{
+    color: #e67e22;
 }
 
 .sticky .logo { display: none }
@@ -615,4 +622,12 @@ input[type=radio]{
     margin-top: 30px;
 } 
 
+/**********************************************/
+/* ANIMATIONS */
+/**********************************************/
+
+.features,
+.steps-box{
+    opacity: 0;
+}
 
